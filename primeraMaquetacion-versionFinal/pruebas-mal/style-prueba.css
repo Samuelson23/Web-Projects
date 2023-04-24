@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+section{
+    padding: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.agent{
+    border: 2px solid black;
+    width: 350px;
+    height: 450px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    height: 400px;
+    width: 300px;
+}
+.agent img:hover{
+    animation:rotar 5s;
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotateX(70deg);
+    }
+    100%{
+        transform: rotateX(70deg);
+    }
+}

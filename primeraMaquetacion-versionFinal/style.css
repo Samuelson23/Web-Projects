@@ -1,0 +1,314 @@
+:root{
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("assets/background-unsplashBlackStars.jpg");
+    object-fit: cover;
+}
+header{
+    background-color: linear-gradient(#121212, #121E2C);
+    min-height:10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content:space-between;
+    gap:2rem;
+}
+.burger{
+    display:none;
+}
+.busqueda{
+    background-color: #121E2C;
+    display:flex;
+    align-items: center;
+}
+input{
+    display:inline;
+    width: 30vh;
+    position:relative
+}
+.material-symbols-outlined{
+    align-items: center;
+    color:white;
+}
+header > img{
+    padding:5px;
+    max-width: 100px;
+    max-height: 100px;
+
+}
+.links > li{
+    padding:2rem;
+    list-style-type: none;
+    display: inline;
+}
+a{
+    text-decoration:none;
+    text-transform: uppercase;
+    color:whitesmoke;
+}
+
+/*  INICIO DEL BODY */
+main{
+    min-height: 85vh;
+    /* background-image: url('assets/images/background-main.jfif'); */
+
+    background-position: 50% 50%;
+}
+.hero{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    color:red;
+    background-color: #0D0D0D;
+    font-size: 2rem;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+.hero > article > img{
+        height: 50vh;
+        width: 100vw;
+        object-fit: cover;
+}
+
+/* 
+
+.card-agent{
+    background-color: rgb(193, 1, 1);
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.card-agent > p{
+    margin-bottom: 5px;
+}
+.card-agent:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+*/
+
+/* CREACION DE LA GRILLA PARA PONER LAS IMAGENES*/
+
+
+.agents-list>ul{
+    margin-top:50px;
+    min-height: 80vh;
+    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-auto-rows: auto;
+    align-items: center;
+}
+.agents-list>ul>li{
+    padding:2rem;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.agents-list > ul > li > article > img{
+    width: 200px;
+    height: 320px;
+    object-fit: fill;
+} 
+
+/* PARA QUE LA CARTA DE LA VUELTA Y MUESTRE OTRA IMAGEN DIFERENTE EN LA PARTE TRASERA*/
+
+.agente{
+
+    width:200px;
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .agente p{
+    background-color: red;
+
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size:2rem;
+  }
+
+  .card{
+    width: 200px;
+    height: 300px;
+    position:relative;
+    transform-style: preserve-3d;
+  }
+  
+   .front, .back {
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      top:0;
+      backface-visibility: hidden;
+    }
+  
+    .front{
+      transform: rotateY(0deg);
+      z-index:2;
+      transition: all 1s linear;
+    }
+  
+    .back{
+      transform: rotateY(180deg);
+      transition: all 1s linear;
+    }
+  
+    .agente:hover .front{
+      transform: rotateY(180deg);
+    }
+    .agente:hover .back{
+      transform:rotateY(360deg);
+    }
+  
+
+.final{
+    min-height: 15vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.final > article{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color:rgb(174, 1, 1)
+}
+
+.final > article > a{
+    text-align: center;
+    text-transform: lowercase;
+}
+/*rotacion cartas de agentes*/
+
+
+footer{
+    min-height: 5vh;
+    background: linear-gradient(#252324,black);
+    color:whitesmoke;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul{
+
+    list-style:none;
+    display:flex;
+    align-items: center;
+}
+footer li{
+    padding:0 10px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+footer img{
+    width:30px;
+    height: 30px;
+    object-fit: cover;
+}
+@media screen and (max-width:1055px){
+    input{
+        display:none;
+    }
+    .busqueda{
+        margin-right: 50px;
+    }
+    .busqueda > span{
+        transform:scale(1.8);
+    }
+}
+
+@media screen and (max-width:1050px){
+    .agents>ul{
+        min-height: 80vh;
+        justify-content: center;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:850px){
+    .agents>ul{
+        min-height: 80vh;
+        justify-content: center;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        align-items: center;
+    }
+    .links > li{
+        padding:5px;
+        list-style-type: none;
+        display: inline;
+    }
+
+}
+@media screen and (max-width:650px){
+    .busqueda > span{
+        transform:scale(1.2);
+    }
+    .burger{
+        display:flex;
+        transform:scale(1.2)
+    }
+    nav{
+        justify-content: space-evenly;
+    }
+    header nav ul{
+        display:none
+    }
+
+    
+}
+@media screen and (max-width:550px){
+    .agents>ul{
+        min-height: 40vh;
+        justify-content: center;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        align-items: center;
+    }
+
+    .agents > ul > li{
+        padding:20px;
+    }
+    .agents > ul > li > article > img{
+        width: 100px;
+        height: 160px;
+        object-fit: fill;
+    } 
+    .card-agent{
+        background-color: rgb(193, 1, 1);
+        color:white;
+        text-align: center;
+        font-size: 0.8rem;
+    } 
+}
