@@ -1,0 +1,44 @@
+.divHome{
+    width: 100%;
+    height: 90%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+
+.gridHome{
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows:auto;
+    gap:1rem;
+    
+}
+
+.btname{
+    height: 3rem;
+    background-color: transparent;
+    border:transparent;
+    font-size: 1.2rem;
+    color:var(--hcolor);
+}
+
+.btname:hover{
+    background-color: whitesmoke;
+}
+
+figure{
+    width:25%;
+    height: 300px;
+    margin:30px;
+    display:flex;
+
+}
+
+figure:hover{
+    transform: scale(1.4);
+    background-color:var(--bkcolor);
+    border:none;
+}

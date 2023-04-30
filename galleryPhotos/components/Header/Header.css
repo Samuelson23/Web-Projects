@@ -1,0 +1,41 @@
+header{
+    background-color:#2F170C;
+    height: 10vh;
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header h1{
+    color:var(--fontcolor);
+    width:40%;
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+header img{
+    height: 80%;
+    width: auto;
+    object-fit: cover;
+    filter:invert(100%);
+    margin-left:5%;
+}
+header ul{
+    display:flex;
+    padding:2rem;
+    gap:2rem;
+}
+header li{
+    list-style-type: none;
+}
+
+header a:hover{
+    border-top:2px solid var(--fontcolor);
+    border-bottom:2px solid var(--fontcolor);
+    padding: 10px 0;
+}
+
+@media screen and (width<750px){
+    header h1{
+        display:none;
+    }
+}
