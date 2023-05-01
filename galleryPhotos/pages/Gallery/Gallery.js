@@ -17,7 +17,6 @@ divBt.classList.add("divbotones");
 
 const botPrev = document.createElement("button");
 botPrev.innerText = "Previous";
-
 const botNext = document.createElement("button");
 botNext.innerText = "Next";
 

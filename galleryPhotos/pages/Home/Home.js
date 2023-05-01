@@ -23,7 +23,7 @@ const printHome = () => {
   <p class="phome">Accede a Gallary para ver todas las obras de arte, o accede a Artists para ver a todos los artistas que componen esta biblioteca fotográfica</p>
   </div>
   <img
-        src="public/images/galleryPhoto.jpg"
+        src="https://res.cloudinary.com/dy25vd1yu/image/upload/v1682947387/API-phototeca/galleryPhoto_nuwvae.jpg"
         alt="imagen acceso a los artistas"
       />
   
