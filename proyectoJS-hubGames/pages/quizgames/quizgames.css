@@ -1,0 +1,56 @@
+.quizGame{
+    min-height: 70vh;
+    width: 70vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem;
+}
+.quizPregunta{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap:20px;
+}
+.quizPregunta h3{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.quizPregunta button {
+    height: 8vh;
+    width: 40vw;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+.quizGame h2{
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+.quizPregunta button:hover{
+    background-color: var(--primaryColor);
+    color:var(--secondaryColor);
+}
+.acertada{
+    border:10px solid rgb(10, 160, 10);
+    background-color: rgb(10, 160, 10);
+}
+.fallada{
+    border:10px solid crimson;
+    background-color: crimson;
+}
+
+@media screen and (width<600px){
+    .quizGame h2{
+        font-size: 2rem;
+    }
+    .quizGame h3{
+        font-size: 1rem;
+    }
+    .quizGame button{
+        height: 12vh;
+        width: 70vw;
+    }
+}

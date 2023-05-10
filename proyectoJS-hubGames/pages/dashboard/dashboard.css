@@ -1,0 +1,38 @@
+.textoDash{
+    min-height: 35vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    gap:25px;
+}
+.textoDash h1,h2{
+    text-align: center;
+}
+
+.divDash{
+    margin-top:30px;
+    min-height: 65vh;
+    width: 100vw;
+    gap:30px;
+    padding:40px;
+    display:flex;
+    flex-direction: column;
+}
+
+.divDash img{
+    width: 80px;
+    height: 80px;
+}
+
+.divDash section{
+    display:flex;
+    gap:50px;
+    justify-content: left;
+    align-items: center;
+}
+
+.divDash div{
+    display:flex;
+    flex-direction: column;
+}

@@ -1,0 +1,43 @@
+footer{
+    background-color: var(--primaryColor);
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:var(--secondaryColor)
+}
+
+footer div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+footer img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+footer a{
+    display:flex;
+    align-items: center;
+}
+
+footer p {
+    color:var(--pmcolor);
+    font-size: 1rem;
+}
+
+@media screen and (width<400px){
+    footer p{
+        display:none
+    }
+    footer{
+        justify-content: center;
+        gap:3%;
+    }
+}

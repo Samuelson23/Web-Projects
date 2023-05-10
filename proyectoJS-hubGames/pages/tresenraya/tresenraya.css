@@ -1,0 +1,41 @@
+.tablero3enraya{
+    font-family: 'Caveat', cursive;
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:0 22.5vw;
+}
+.tablero3enraya div{
+
+    font-size: 10rem;
+    width:15vw;
+    height: 25vh;
+    border:1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playAg{
+    height: 100px;
+    width: 100px;
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    border:5px solid var(--primaryColor);
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+@media screen and (width<500px){
+    .tablero3enraya{
+        padding:5vw ;
+    }
+    .tablero3enraya div{
+        width:30vw;
+        height: 20vh;
+    
+    }
+}

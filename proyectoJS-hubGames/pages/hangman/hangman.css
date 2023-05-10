@@ -1,0 +1,98 @@
+.ahorcado{
+    height: 70vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    background-color: rgb(255, 255, 255);
+
+}
+/* .ahorcado div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+} */
+.playHangman{
+    height: 50px;
+    width: 100px;
+    margin: 50px;
+}
+.ahorcado h2{
+    font-size: 3rem;
+    text-shadow: none;
+}
+.ahorcado h3{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.ahorcado img{
+    height: 350px;
+    width: 350px;
+}
+.tablero{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    width: 80vw;
+    
+}
+.palabra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+    width: 50vw;
+    
+}
+.palabraOculta{
+    display:flex;
+    flex-direction:row;
+    gap:2rem;  
+}
+input{
+    height: 2rem;
+    width: 5rem;
+    text-align: center;
+}
+.btBuscar{
+    height: 2rem;
+    width: 8rem;
+}
+
+@media screen and (width<850px){
+    .palabraOculta{
+        gap:1rem;  
+    }
+}
+
+@media screen and (width<700px){
+    .ahorcado img{
+        height: 200px;
+        width: 200px;
+    }
+}
+@media screen and (width<500px){
+    .ahorcado h2{
+        font-size: 2rem;
+    }
+    .palabraOculta{
+        gap:0.3rem;
+        font-size: 12px;
+    }
+    .busqueda{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:40px;
+    }
+
+}

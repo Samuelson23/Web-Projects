@@ -1,0 +1,10 @@
+.pageAbout{
+    height: 70vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    gap:3.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding:20px;
+}
